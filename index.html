@@ -19,7 +19,9 @@
           >
             <div class="grid">
               <div class="text-component padding-md">
-                <h2 style="margin-top: 16px">CÔNG TY TNHH PHẦN MỀM VÀ TRUYỀN THÔNG VÂN TAY</h2>
+                <h2 style="margin-top: 16px">
+                  CÔNG TY TNHH PHẦN MỀM VÀ TRUYỀN THÔNG VÂN TAY
+                </h2>
                 <ul>
                   <li><b>Mã số thuế:</b> 0312731527</li>
                   <li>
@@ -61,7 +63,8 @@
                 <ul>
                   <li><b>Mã số thuế:</b> 0315841158</li>
                   <li>
-                    <b>Địa chỉ</b>: Số 297/3 Đinh Tiên Hoàng, Phường 3, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam
+                    <b>Địa chỉ</b>: Số 297/3 Đinh Tiên Hoàng, Phường 3, Quận
+                    Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam
                   </li>
                   <li><b>Email nhận hóa đơn: </b>hoadon@vantaymedia.com</li>
                 </ul>
@@ -83,5 +86,16 @@
       </div>
     </main>
     <script src="assets/js/scripts.js"></script>
+    <script>
+      const cards = document.querySelectorAll(".stack-cards__item");
+      cards.forEach((card) => {
+        card.addEventListener("click", function () {
+          cards.forEach((card) => {
+            card.style.border = null;
+          });
+          this.style.border = "8px solid #ffce00";
+        });
+      });
+    </script>
   </body>
 </html>
