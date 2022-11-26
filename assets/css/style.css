@@ -2025,6 +2025,7 @@ mark {
   --stack-cards-gap: var(--space-sm); }
 
 .stack-cards__item {
+  cursor: pointer;
   position: relative;
   position: -webkit-sticky;
   position: sticky;
